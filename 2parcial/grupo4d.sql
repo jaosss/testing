@@ -1,0 +1,76 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 18-03-2025 a las 18:54:10
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `grupo4d`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `nacimientos`
+--
+
+CREATE TABLE `nacimientos` (
+  `NOM` varchar(15) NOT NULL,
+  `APAT` varchar(15) NOT NULL,
+  `AMAT` varchar(15) NOT NULL,
+  `FECNAC` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `nacimientos`
+--
+
+INSERT INTO `nacimientos` (`NOM`, `APAT`, `AMAT`, `FECNAC`) VALUES
+('ALEJANDRO', 'BERNACHE', 'GONZALEZ', '2008-12-12'),
+('DANIEL', 'CANDELAS', 'LANDEROS', '2008-07-02'),
+('ESTRELLA', 'CARO', 'CERVANTES', '2008-03-15'),
+('XIMENA', 'CARRILLO', 'FLORES', '2007-01-25'),
+('ELIZABETH', 'CASTRO', 'FLORES', '2008-06-09'),
+('OSMAR', 'CERNA', 'GUZMAN', '2008-08-15'),
+('ALAN', 'CHAVEZ', 'ANGULO', '2008-07-22'),
+('CESAR', 'CLAVEL', 'GARCIA', '2008-11-23'),
+('ARIADNA', 'CORREA', 'HERNANDEZ', '2008-01-01'),
+('DIEGO', 'DE SANTIAGO', 'IBARRA', '2008-04-10'),
+('ANGEL', 'FLORES', 'ALFARO', '2007-09-29'),
+('EVELIN', 'GALVEZ', 'GUZMAN', '2008-12-15'),
+('TAIRI', 'GONZALEZ ', 'FUENTES', '2005-10-01'),
+('RICARDO', 'GUTIERREZ', 'GOMEZ', '2007-07-25'),
+('FAUSTO', 'GUTIERREZ', 'VIZCARRA', '2008-05-06'),
+('GABRIELA', 'GUZMAN', 'TORRES', '2008-01-20'),
+('RODRIGO', 'HERNANDEZ', 'OSORIO', '2008-02-20'),
+('DANIEL', 'LIZAOLA ', 'RAMIREZ', '2008-07-23'),
+('FERNANDA', 'MALDONADO', 'MARTINEZ', '2008-03-14'),
+('EDSON', 'MEJIA', 'RAMOS', '2007-01-11'),
+('ALFREDO', 'NERI', 'LOPEZ', '2008-02-05'),
+('ETHAN', 'OREJEL', 'OCEGUEDA', '2008-01-01'),
+('CARLOS', 'PRUDENCIO', 'HERNANDEZ', '2007-01-26'),
+('DAVID', 'RAMOS', 'VEGA', '2008-09-05'),
+('DIEGO', 'RODRIGUEZ', 'CASTILLO', '2008-12-18'),
+('I?AKI', 'ROMERO', 'FUENTES', '2008-10-17'),
+('PABLO', 'SANDOVAL', 'ARRIAGA', '2008-07-05'),
+('IKER', 'SAUCEDO', 'BARRERA', '2008-11-12'),
+('YAIRA', 'ZAMORA', 'ALFEREZ', '2008-09-23'),
+('ALISSON', 'VALDEZ', 'MEDRANO', '2008-03-04');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
